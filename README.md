@@ -15,3 +15,5 @@
 7.Non-Repeating element in String
 
 8.Disjoint or Not
+
+9.Construct an object from a string
