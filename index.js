@@ -232,3 +232,19 @@ function Disjoint(arr1, arr2) {
 }
 
 console.log(Disjoint(a, c))
+
+
+// -----------------9.Construct an object from a string-------------------
+
+var path = "a.b.c.d.e"
+
+var key = path.split('.')
+
+var obj = {}
+var current = obj
+
+for (let i = 0; i < key.length; i++) {
+    current[key[i]] = i === key.length - 1 ? '' : {}
+    current = current[key[i]]
+}
+console.log(obj)
